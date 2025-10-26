@@ -6,29 +6,29 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'AI Content Detector | Detect AI-Generated Content & Plagiarism',
+  title: 'AI Content Detector | Detect AI-Generated Content with Advanced Analysis',
   description:
-    'Detect AI-generated content and check for plagiarism with industry-leading accuracy. Analyze up to 50,000 characters instantly with detailed sentence-level insights.',
+    'Detect AI-generated content with industry-leading accuracy. Analyze up to 50,000 characters instantly with detailed sentence-level insights and visual highlighting.',
   keywords: [
     'AI detection',
     'AI content detector',
-    'plagiarism checker',
     'ChatGPT detector',
     'AI text detector',
     'content authenticity',
     'ZeroGPT',
+    'AI writing detector',
   ],
   authors: [{ name: 'AI Content Detector' }],
   openGraph: {
-    title: 'AI Content Detector | Detect AI-Generated Content & Plagiarism',
-    description: 'Detect AI-generated content and check for plagiarism with industry-leading accuracy.',
+    title: 'AI Content Detector | Detect AI-Generated Content',
+    description: 'Detect AI-generated content with industry-leading accuracy and detailed analysis.',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AI Content Detector',
-    description: 'Detect AI-generated content and check for plagiarism',
+    description: 'Detect AI-generated content with advanced analysis',
   },
   robots: {
     index: true,
@@ -48,82 +48,37 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={inter.className}>
-        {/* Header */}
-        <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
-              <Link href="/" className="flex items-center gap-2">
-                <span className="text-2xl font-bold text-gray-900">AI Content Detector</span>
-              </Link>
-              <nav className="hidden md:flex items-center gap-6">
-                <Link
-                  href="/detector"
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
-                >
-                  AI Detection
-                </Link>
-                <Link
-                  href="/plagiarism"
-                  className="text-gray-700 hover:text-purple-600 font-medium transition-colors"
-                >
-                  Plagiarism Check
-                </Link>
-                <Link href="/privacy" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Privacy
-                </Link>
-                <Link href="/terms" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Terms
-                </Link>
-              </nav>
-              <nav className="md:hidden">
-                <Link
-                  href="/detector"
-                  className="text-sm text-gray-700 hover:text-blue-600 font-medium mr-4"
-                >
-                  Detect
-                </Link>
-                <Link
-                  href="/plagiarism"
-                  className="text-sm text-gray-700 hover:text-purple-600 font-medium"
-                >
-                  Plagiarism
-                </Link>
-              </nav>
-            </div>
-          </div>
-        </header>
-
         {/* Main Content */}
         <main>{children}</main>
 
         {/* Footer */}
         <footer className="bg-gray-900 text-white mt-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div className="grid md:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-3 gap-8">
               <div>
                 <h3 className="text-lg font-bold mb-4">AI Content Detector</h3>
                 <p className="text-gray-400 text-sm">
-                  Detect AI-generated content and plagiarism with industry-leading accuracy.
+                  Detect AI-generated content with industry-leading accuracy and detailed sentence-level analysis.
                 </p>
               </div>
               <div>
-                <h4 className="font-semibold mb-4">Features</h4>
+                <h4 className="font-semibold mb-4">Navigation</h4>
                 <ul className="space-y-2 text-sm text-gray-400">
                   <li>
-                    <Link href="/detector" className="hover:text-white transition-colors">
-                      AI Detection
+                    <Link href="/" className="hover:text-white transition-colors">
+                      Home
                     </Link>
                   </li>
                   <li>
-                    <Link href="/plagiarism" className="hover:text-white transition-colors">
-                      Plagiarism Checker
+                    <Link href="/about" className="hover:text-white transition-colors">
+                      About Us
                     </Link>
                   </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-4">Legal</h4>
-                <ul className="space-y-2 text-sm text-gray-400">
+                  <li>
+                    <Link href="/contact" className="hover:text-white transition-colors">
+                      Contact Us
+                    </Link>
+                  </li>
                   <li>
                     <Link href="/privacy" className="hover:text-white transition-colors">
                       Privacy Policy
@@ -138,7 +93,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </div>
               <div>
                 <h4 className="font-semibold mb-4">Powered By</h4>
-                <p className="text-sm text-gray-400">
+                <p className="text-sm text-gray-400 mb-4">
                   <a
                     href="https://www.zerogpt.com"
                     target="_blank"
@@ -147,6 +102,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   >
                     ZeroGPT Business API
                   </a>
+                </p>
+                <p className="text-xs text-gray-500">
+                  Advanced AI detection powered by state-of-the-art language models
                 </p>
               </div>
             </div>
@@ -169,7 +127,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               name: 'AI Content Detector',
               applicationCategory: 'BusinessApplication',
               description:
-                'Detect AI-generated content and check for plagiarism with industry-leading accuracy.',
+                'Detect AI-generated content with industry-leading accuracy and detailed analysis.',
               offers: {
                 '@type': 'Offer',
                 price: '0',
