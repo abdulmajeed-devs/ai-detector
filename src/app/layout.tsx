@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  verification: {
+    google: 'NdAlkiqJaR20Y5G0u8ts_2dcEY5rqGdEC25Np8t1dTk',
+  },
   openGraph: {
     title: 'Ai detector Free Detect ChatGPT gemini claude content',
     description: 'Paste text to detect AI-generated content. Free AI detector with instant score, highlight view, and downloadable report.',
