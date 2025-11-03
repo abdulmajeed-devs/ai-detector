@@ -43,7 +43,7 @@ export default function AboutPage() {
           </div>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             AI Content Detector provides advanced analysis tools that help you understand the nature of written content. 
-            Using cutting-edge technology powered by ZeroGPT Business API, we offer:
+            Using cutting-edge AI detection technology, we offer:
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-blue-50 rounded-xl p-6 border-2 border-blue-200">
@@ -189,8 +189,8 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold text-gray-900">Our Technology</h2>
           </div>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            We leverage advanced AI detection technology powered by <strong>ZeroGPT Business API</strong>, one of the 
-            industry's leading content analysis platforms. Our system combines multiple detection methods:
+            We leverage state-of-the-art AI detection technology and advanced machine learning algorithms. 
+            Our system combines multiple detection methods to provide accurate and reliable results:
           </p>
           <div className="space-y-4">
             <div className="bg-purple-50 rounded-lg p-5 border-l-4 border-purple-500">

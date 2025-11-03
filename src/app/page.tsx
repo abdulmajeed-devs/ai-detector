@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { Loader2, AlertCircle, CheckCircle2, AlertTriangle, FileText, Sparkles, Eye, Shield, Zap, Lock } from 'lucide-react';
+import { Loader2, AlertCircle, CheckCircle2, AlertTriangle, FileText, Sparkles, Eye, Shield, Zap, Lock, User } from 'lucide-react';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import type { NormalizedDetectionResult } from '@/types/zerogpt.types';
@@ -478,15 +478,7 @@ export default function HomePage() {
 
             {/* Footer Info */}
             <p className="text-sm text-gray-500 text-center">
-              Analyzed at {new Date(result.checkedAt).toLocaleString()} • Powered by{' '}
-              <a
-                href="https://www.zerogpt.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 font-semibold underline"
-              >
-                ZeroGPT Business API
-              </a>
+              Analyzed at {new Date(result.checkedAt).toLocaleString()}
             </p>
           </div>
         )}
@@ -839,6 +831,76 @@ export default function HomePage() {
                 ))}
               </div>
             </section>
+
+            {/* Author Box */}
+            <section className="bg-white rounded-2xl shadow-xl p-8 border-2 border-gray-200">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                {/* Author Image */}
+                <div className="flex-shrink-0">
+                  <div className="relative">
+                    <img
+                      src="/514053566_9859896344137239_4135912972890026608_n (1).jpg"
+                      alt="Abdul Majeed - Developer & SEO Expert"
+                      className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-blue-500 shadow-lg"
+                      onError={(e) => {
+                        // Fallback to a placeholder if image fails to load
+                        e.currentTarget.style.display = 'none';
+                        e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                      }}
+                    />
+                    <div className="hidden w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center border-4 border-blue-500 shadow-lg">
+                      <User className="w-16 h-16 md:w-20 md:h-20 text-white" />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Author Info */}
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Abdul Majeed</h3>
+                  <p className="text-lg text-gray-600 mb-4 font-medium">
+                    Developer & SEO Expert | Using AI Tools and Automation to Drive Organic Growth
+                  </p>
+                  <p className="text-gray-700 leading-relaxed mb-6">
+                    I use AI tools to automate SEO and drive organic growth in search engines. Building smart solutions 
+                    that help websites rank better and reach more people naturally.
+                  </p>
+                  
+                  {/* Social Links */}
+                  <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
+                    <a
+                      href="https://x.com/majeeddev"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-5 py-2.5 bg-black text-white rounded-lg hover:bg-gray-800 transition-all font-semibold shadow-md hover:shadow-lg"
+                    >
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                      </svg>
+                      Follow on X
+                    </a>
+                    
+                    <a
+                      href="https://www.facebook.com/abdulmajeeddevseo"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all font-semibold shadow-md hover:shadow-lg"
+                    >
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
+                      </svg>
+                      Follow on Facebook
+                    </a>
+                  </div>
+
+                  {/* Last Updated */}
+                  <div className="mt-6 pt-6 border-t border-gray-200">
+                    <p className="text-sm text-gray-500 text-center md:text-left">
+                      <span className="font-semibold text-gray-700">Last Updated:</span> November 1, 2025
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         )}
 
@@ -879,7 +941,7 @@ export default function HomePage() {
                   <h3 className="text-xl font-bold text-gray-900">High Accuracy</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed">
-                  Industry-leading detection powered by ZeroGPT with detailed confidence scores and sentence analysis.
+                  Industry-leading AI detection with detailed confidence scores and comprehensive sentence-level analysis.
                 </p>
               </div>
             </div>
@@ -923,6 +985,25 @@ export default function HomePage() {
         )}
       </div>
     </div>
+
+    {/* JSON-LD Structured Data - WebSite Schema with SearchAction */}
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          '@id': 'https://aidetectorfree.app/#website',
+          url: 'https://aidetectorfree.app/',
+          name: 'AI Detector Free',
+          potentialAction: {
+            '@type': 'SearchAction',
+            target: 'https://aidetectorfree.app/?q={search_term_string}',
+            'query-input': 'required name=search_term_string'
+          }
+        }),
+      }}
+    />
     </>
   );
 }

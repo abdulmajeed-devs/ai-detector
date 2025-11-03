@@ -6,29 +6,36 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'AI Content Detector | Detect AI-Generated Content with Advanced Analysis',
+  title: 'Ai detector Free Detect ChatGPT gemini claude content',
   description:
-    'Detect AI-generated content with industry-leading accuracy. Analyze up to 50,000 characters instantly with detailed sentence-level insights and visual highlighting.',
+    'Paste text to detect AI-generated content. Free AI detector with instant score, highlight view, and downloadable report.',
   keywords: [
     'AI detection',
     'AI content detector',
     'ChatGPT detector',
     'AI text detector',
     'content authenticity',
-    'ZeroGPT',
     'AI writing detector',
+    'gemini detector',
+    'claude detector',
+    'free ai detector',
   ],
   authors: [{ name: 'AI Content Detector' }],
+  metadataBase: new URL('https://aidetectorfree.app'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    title: 'AI Content Detector | Detect AI-Generated Content',
-    description: 'Detect AI-generated content with industry-leading accuracy and detailed analysis.',
+    title: 'Ai detector Free Detect ChatGPT gemini claude content',
+    description: 'Paste text to detect AI-generated content. Free AI detector with instant score, highlight view, and downloadable report.',
     type: 'website',
     locale: 'en_US',
+    url: 'https://aidetectorfree.app',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Content Detector',
-    description: 'Detect AI-generated content with advanced analysis',
+    title: 'Ai detector Free Detect ChatGPT gemini claude content',
+    description: 'Paste text to detect AI-generated content. Free AI detector with instant score, highlight view, and downloadable report.',
   },
   robots: {
     index: true,
@@ -45,7 +52,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={inter.className}>
         {/* Main Content */}
@@ -92,19 +103,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold mb-4">Powered By</h4>
+                <h4 className="font-semibold mb-4">About</h4>
                 <p className="text-sm text-gray-400 mb-4">
-                  <a
-                    href="https://www.zerogpt.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-white transition-colors"
-                  >
-                    ZeroGPT Business API
-                  </a>
+                  Advanced AI detection technology powered by state-of-the-art language models and machine learning algorithms.
                 </p>
                 <p className="text-xs text-gray-500">
-                  Advanced AI detection powered by state-of-the-art language models
+                  Helping maintain content authenticity and integrity
                 </p>
               </div>
             </div>
@@ -117,17 +121,39 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </footer>
 
-        {/* JSON-LD Structured Data */}
+        {/* JSON-LD Structured Data - Organization Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'AI Detector Free',
+              url: 'https://aidetectorfree.app/',
+              sameAs: [
+                'https://x.com/majeeddev'
+              ],
+              contactPoint: [{
+                '@type': 'ContactPoint',
+                contactType: 'customer support',
+                email: 'support@aidetectorfree.app',
+                availableLanguage: ['en']
+              }]
+            }),
+          }}
+        />
+
+        {/* JSON-LD Structured Data - Software Application Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'SoftwareApplication',
-              name: 'AI Content Detector',
+              name: 'AI Detector Free',
               applicationCategory: 'BusinessApplication',
               description:
-                'Detect AI-generated content with industry-leading accuracy and detailed analysis.',
+                'Paste text to detect AI-generated content. Free AI detector with instant score, highlight view, and downloadable report.',
               offers: {
                 '@type': 'Offer',
                 price: '0',

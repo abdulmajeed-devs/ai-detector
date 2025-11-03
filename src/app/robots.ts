@@ -1,16 +1,21 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
-
   return {
     rules: [
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/*'],
+        disallow: [
+          '/api/',
+          '/api/*',
+          '/_next/',
+          '/node_modules/',
+          '/.git/',
+          '/coverage/',
+        ],
       },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: 'https://aidetectorfree.app/sitemap.xml',
   };
 }

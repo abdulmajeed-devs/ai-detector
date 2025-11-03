@@ -40,8 +40,8 @@ export default function PrivacyPage() {
               </p>
             </div>
             <p className="text-gray-700 leading-relaxed mb-4">
-              When you submit text for AI detection or plagiarism checking, we process it in memory only. Your content
-              is sent to our third-party analysis provider (ZeroGPT) and is immediately discarded after analysis. We never
+              When you submit text for AI detection, we process it in memory only. Your content
+              is sent to our third-party analysis provider and is immediately discarded after analysis. We never
               write your actual text content to our database.
             </p>
             <p className="text-gray-700 leading-relaxed">
@@ -55,26 +55,17 @@ export default function PrivacyPage() {
           <section>
             <div className="flex items-center gap-3 mb-4">
               <Eye className="w-6 h-6 text-purple-600" />
-              <h2 className="text-2xl font-bold text-gray-900">Third-Party Service Provider</h2>
+              <h2 className="text-2xl font-bold text-gray-900">Third-Party Service Providers</h2>
             </div>
             <p className="text-gray-700 leading-relaxed mb-4">
-              We use <strong>ZeroGPT Business API</strong> to perform AI content detection and plagiarism checking. When
+              We use third-party AI detection technology to perform content analysis. When
               you submit text for analysis:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-              <li>Your text is transmitted securely to ZeroGPT's servers via encrypted HTTPS connection</li>
-              <li>ZeroGPT processes your text according to their own privacy policy</li>
-              <li>We do not control how ZeroGPT handles your data</li>
-              <li>We recommend reviewing{' '}
-                <a
-                  href="https://www.zerogpt.com/privacy-policy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 underline"
-                >
-                  ZeroGPT's Privacy Policy
-                </a>
-              </li>
+              <li>Your text is transmitted securely to our service providers via encrypted HTTPS connection</li>
+              <li>Third-party providers process your text according to their own privacy policies</li>
+              <li>We do not control how third-party providers handle your data</li>
+              <li>Your content is processed in real-time and is not stored permanently by us</li>
             </ul>
           </section>
 

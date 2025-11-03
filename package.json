@@ -1,7 +1,7 @@
 {
   "name": "ai-content-detector",
   "version": "1.0.0",
-  "description": "A web application for AI content detection and plagiarism checking.",
+  "description": "A web application for AI content detection powered by ZeroGPT.",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
@@ -41,7 +41,8 @@
   "keywords": [
     "AI",
     "content detection",
-    "plagiarism",
+    "ChatGPT detector",
+    "AI detector",
     "web application"
   ],
   "author": "Your Name",
