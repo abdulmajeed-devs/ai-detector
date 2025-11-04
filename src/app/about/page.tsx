@@ -1,5 +1,25 @@
 import { Sparkles, Shield, Zap, Eye, Target, Users, Heart } from 'lucide-react';
 import Header from '@/components/Header';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About AI Detector Free – Our Mission, Methodology & Team',
+  description: 'Learn who we are, how our AI detector works, and what drives us. See our mission, transparency on accuracy and limitations, and the people behind AI Detector Free.',
+  alternates: {
+    canonical: '/about',
+  },
+  openGraph: {
+    title: 'About AI Detector Free – Our Mission, Methodology & Team',
+    description: 'Learn who we are, how our AI detector works, and what drives us. See our mission, transparency on accuracy and limitations, and the people behind AI Detector Free.',
+    url: 'https://aidetectorfree.app/about',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About AI Detector Free – Our Mission, Methodology & Team',
+    description: 'Learn who we are, how our AI detector works, and what drives us. See our mission, transparency on accuracy and limitations, and the people behind AI Detector Free.',
+  },
+};
 
 export default function AboutPage() {
   return (

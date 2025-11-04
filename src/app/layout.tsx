@@ -6,9 +6,9 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Ai detector Free Detect ChatGPT gemini claude content',
+  title: 'Free AI Detector – AI Content Checker for ChatGPT & Gemini Claude.',
   description:
-    'Paste text to detect AI-generated content. Free AI detector with instant score, highlight view, and downloadable report.',
+    'Check if text is AI-generated in seconds. Free AI detector with instant score, highlighted passages, and no login. Works with ChatGPT, Gemini, Claude & more.',
   keywords: [
     'AI detection',
     'AI content detector',
@@ -29,16 +29,16 @@ export const metadata: Metadata = {
     google: 'NdAlkiqJaR20Y5G0u8ts_2dcEY5rqGdEC25Np8t1dTk',
   },
   openGraph: {
-    title: 'Ai detector Free Detect ChatGPT gemini claude content',
-    description: 'Paste text to detect AI-generated content. Free AI detector with instant score, highlight view, and downloadable report.',
+    title: 'Free AI Detector – AI Content Checker for ChatGPT & Gemini Claude.',
+    description: 'Check if text is AI-generated in seconds. Free AI detector with instant score, highlighted passages, and no login. Works with ChatGPT, Gemini, Claude & more.',
     type: 'website',
     locale: 'en_US',
     url: 'https://aidetectorfree.app',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ai detector Free Detect ChatGPT gemini claude content',
-    description: 'Paste text to detect AI-generated content. Free AI detector with instant score, highlight view, and downloadable report.',
+    title: 'Free AI Detector – AI Content Checker for ChatGPT & Gemini Claude.',
+    description: 'Check if text is AI-generated in seconds. Free AI detector with instant score, highlighted passages, and no login. Works with ChatGPT, Gemini, Claude & more.',
   },
   robots: {
     index: true,

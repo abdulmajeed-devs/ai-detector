@@ -1,5 +1,29 @@
 import { Shield, Lock, Database, Eye } from 'lucide-react';
 import Header from '@/components/Header';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy – AI Detector Free (No Storage, Secure Processing)',
+  description: 'Read how AI Detector Free handles your data. We process text securely, do not store submitted content, and comply with applicable privacy regulations.',
+  alternates: {
+    canonical: '/privacy',
+  },
+  openGraph: {
+    title: 'Privacy Policy – AI Detector Free (No Storage, Secure Processing)',
+    description: 'Read how AI Detector Free handles your data. We process text securely, do not store submitted content, and comply with applicable privacy regulations.',
+    url: 'https://aidetectorfree.app/privacy',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy Policy – AI Detector Free (No Storage, Secure Processing)',
+    description: 'Read how AI Detector Free handles your data. We process text securely, do not store submitted content, and comply with applicable privacy regulations.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function PrivacyPage() {
   return (

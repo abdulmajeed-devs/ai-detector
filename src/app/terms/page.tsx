@@ -1,5 +1,29 @@
 import { FileText, AlertTriangle, Shield } from 'lucide-react';
 import Header from '@/components/Header';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Terms of Service – AI Detector Free (Usage & Responsibilities)',
+  description: 'Review the terms for using AI Detector Free, including acceptable use, limitations, disclaimers, and user responsibilities.',
+  alternates: {
+    canonical: '/terms',
+  },
+  openGraph: {
+    title: 'Terms of Service – AI Detector Free (Usage & Responsibilities)',
+    description: 'Review the terms for using AI Detector Free, including acceptable use, limitations, disclaimers, and user responsibilities.',
+    url: 'https://aidetectorfree.app/terms',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Terms of Service – AI Detector Free (Usage & Responsibilities)',
+    description: 'Review the terms for using AI Detector Free, including acceptable use, limitations, disclaimers, and user responsibilities.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function TermsPage() {
   return (
